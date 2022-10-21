@@ -19,6 +19,7 @@ module.exports = {
       },
       fontFamily: {
         inter: ["Inter"],
+        roboto: ["Roboto Mono"],
       },
     },
   },
