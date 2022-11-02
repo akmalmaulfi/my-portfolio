@@ -771,6 +771,10 @@ video {
   cursor: pointer;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -801,6 +805,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-l {
@@ -859,6 +867,11 @@ video {
 .border-violet-600 {
   --tw-border-opacity: 1;
   border-color: rgb(124 58 237 / var(--tw-border-opacity));
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(139 92 246 / var(--tw-border-opacity));
 }
 
 .bg-transparent {
@@ -981,6 +994,18 @@ video {
 
 .pb-36 {
   padding-bottom: 9rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-center {
@@ -1269,6 +1294,14 @@ body {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-transparent {
+  background-color: transparent;
+}
+
+.dark .dark\:bg-none {
+  background-image: none;
+}
+
 .dark .dark\:text-slate-100 {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
@@ -1289,6 +1322,11 @@ body {
   color: rgb(148 163 184 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(139 92 246 / var(--tw-text-opacity));
+}
+
 .dark .dark\:shadow-slate-600 {
   --tw-shadow-color: #475569;
   --tw-shadow: var(--tw-shadow-colored);
@@ -1299,12 +1337,20 @@ body {
     margin-right: 2rem;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:w-full {
     width: 100%;
   }
 
   .md\:w-72 {
     width: 18rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-lg {
@@ -1346,6 +1392,10 @@ body {
     height: 2.75rem;
   }
 
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1360,6 +1410,30 @@ body {
 
   .lg\:w-80 {
     width: 20rem;
+  }
+
+  .lg\:w-\[40\] {
+    width: 40;
+  }
+
+  .lg\:w-\[40px\] {
+    width: 40px;
+  }
+
+  .lg\:w-\[80px\] {
+    width: 80px;
+  }
+
+  .lg\:w-\[20px\] {
+    width: 20px;
+  }
+
+  .lg\:w-\[100px\] {
+    width: 100px;
+  }
+
+  .lg\:w-\[200px\] {
+    width: 200px;
   }
 
   .lg\:max-w-full {
@@ -1385,6 +1459,10 @@ body {
 
   .lg\:rounded-none {
     border-radius: 0px;
+  }
+
+  .lg\:border-none {
+    border-style: none;
   }
 
   .lg\:bg-transparent {
@@ -1413,6 +1491,10 @@ body {
 
   .lg\:pt-12 {
     padding-top: 3rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .lg\:text-5xl {
