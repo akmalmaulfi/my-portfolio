@@ -20,18 +20,18 @@ hamburger.addEventListener("click", function () {
 });
 
 // Dark Mode Toggle
-const darkToggle = document.querySelector("#dark-toggle");
-const html = document.querySelector("html");
+// const darkToggle = document.querySelector("#dark-toggle");
+// const html = document.querySelector("html");
 
-darkToggle.addEventListener("click", function () {
-  if (darkToggle.checked) {
-    html.classList.add("dark");
-    localStorage.theme = "dark";
-  } else {
-    html.classList.remove("dark");
-    localStorage.theme = "light";
-  }
-});
+// darkToggle.addEventListener("click", function () {
+//   if (darkToggle.checked) {
+//     html.classList.add("dark");
+//     localStorage.theme = "dark";
+//   } else {
+//     html.classList.remove("dark");
+//     localStorage.theme = "light";
+//   }
+// });
 
 // Klik diluar Hamburger
 window.addEventListener("click", function (e) {
@@ -42,7 +42,11 @@ window.addEventListener("click", function (e) {
 });
 
 // pindahkan posisi toggle sesuai mode
-if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
   darkToggle.checked = true;
 } else {
   darkToggle.checked = false;

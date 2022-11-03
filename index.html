@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <script>
+    <!-- <script>
       if (
         localStorage.theme === "dark" ||
         (!("theme" in localStorage) &&
@@ -24,7 +24,7 @@
       } else {
         document.documentElement.classList.remove("dark");
       }
-    </script>
+    </script> -->
   </head>
   <body>
     <!-- Header Section Start -->
@@ -90,7 +90,7 @@
                     >Contact</a
                   >
                 </li>
-                <li class="flex items-center pl-8 mt-3 lg:mt-0">
+                <!-- <li class="flex items-center pl-8 mt-3 lg:mt-0">
                   <span class="mr-2 text-sm text-slate-500">Light</span>
                   <input type="checkbox" class="hidden" id="dark-toggle" />
                   <label for="dark-toggle">
@@ -103,7 +103,7 @@
                     </div>
                   </label>
                   <span class="ml-2 text-sm text-slate-500">Dark</span>
-                </li>
+                </li> -->
               </ul>
             </nav>
           </div>
@@ -143,7 +143,7 @@
             </p>
             <a
               href="#about"
-              class="bg-primary dark:bg-transparent border border-primary px-8 py-3 rounded text-white text-base font-semibold font-roboto dark:text-primary"
+              class="dark:bg-none border border-primary px-8 py-3 rounded text-white dark:text-primary text-base font-roboto hover:bg-primary dark:hover:text-slate-100 transition"
               >Check Out My Skills!</a
             >
           </div>
@@ -170,12 +170,12 @@
               Tech Stack
             </h2>
             <div
-              class="w-full flex justify-center lg:justify-evenly items-center flex-wrap lg:mt-6"
+              class="w-full flex justify-center lg:justify-evenly items-center flex-wrap mt-8"
             >
               <div
-                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-1/6"
+                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-[16%]"
               >
-                <img src="dist/img/html.svg" alt="" class="w-10 lg:w-20" />
+                <img src="dist/img/html.svg" alt="" class="w-10 lg:w-" />
                 <p
                   class="text-sm text-slate-700 dark:text-slate-300 text-center font-roboto"
                 >
@@ -183,9 +183,9 @@
                 </p>
               </div>
               <div
-                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-1/6"
+                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-[16%]"
               >
-                <img src="dist/img/css.svg" alt="" class="w-10 lg:w-20" />
+                <img src="dist/img/css.svg" alt="" class="w-10 lg:w-" />
                 <p
                   class="text-sm text-slate-700 dark:text-slate-300 text-center font-roboto"
                 >
@@ -193,13 +193,9 @@
                 </p>
               </div>
               <div
-                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-1/6"
+                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-[16%]"
               >
-                <img
-                  src="dist/img/javascript.svg"
-                  alt=""
-                  class="w-10 lg:w-20"
-                />
+                <img src="dist/img/javascript.svg" alt="" class="w-10 lg:w-" />
                 <p
                   class="text-sm text-slate-700 dark:text-slate-300 text-center font-roboto"
                 >
@@ -207,9 +203,9 @@
                 </p>
               </div>
               <div
-                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-1/6"
+                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-[16%]"
               >
-                <img src="dist/img/git.svg" alt="" class="w-10 lg:w-20" />
+                <img src="dist/img/git.svg" alt="" class="w-10 lg:w-" />
                 <p
                   class="text-sm text-slate-700 dark:text-slate-300 text-center font-roboto"
                 >
@@ -217,9 +213,9 @@
                 </p>
               </div>
               <div
-                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-1/6"
+                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-[16%]"
               >
-                <img src="dist/img/boostrap.svg" alt="" class="w-10 lg:w-20" />
+                <img src="dist/img/boostrap.svg" alt="" class="w-10 lg:w-" />
                 <p
                   class="text-sm text-slate-700 dark:text-slate-300 text-center font-roboto"
                 >
@@ -227,9 +223,9 @@
                 </p>
               </div>
               <div
-                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-1/6"
+                class="flex justify-center items-center flex-col mr-2 mb-4 w-1/4 lg:w-[16%]"
               >
-                <img src="dist/img/tailwind.svg" alt="" class="w-10 lg:w-20" />
+                <img src="dist/img/tailwind.svg" alt="" class="w-10 lg:w-" />
                 <p
                   class="text-sm text-slate-700 dark:text-slate-300 text-center font-roboto"
                 >
@@ -248,7 +244,7 @@
       id="portfolio"
       class="pt-20 lg:pb-20 pb-0 bg-slate-200 dark:bg-slate-900"
     >
-      <div class="container">
+      <div class="container px-8">
         <div class="w-full text-center mb-14">
           <h4
             class="text-primary font-bold uppercase text-lg mb-2 lg:text-xl font-roboto"
@@ -264,7 +260,7 @@
             class="md:w-1/2 md:order-1 md:ml-4 md:flex md:flex-col md:-translate-x-16"
           >
             <h1
-              class="dark:text-slate-100 font-semibold text-xl md:text-2xl mb-4 text-right"
+              class="dark:text-slate-100 font-semibold text-xl md:text-2xl mb-4 md:text-right"
             >
               01. Vacation.co
             </h1>
@@ -274,12 +270,12 @@
                 bookings for your vacation.
               </p>
             </div>
-            <div class="mt-2 text-right">
+            <div class="mt-2 md:text-right">
               <p class="dark:text-slate-400 text-sm font-light font-roboto">
                 HTML CSS TailwindCSS
               </p>
             </div>
-            <div class="mt-2 flex justify-end">
+            <div class="mt-2 md:flex md:justify-end">
               <a
                 href="https://akmalmaulfi.github.io/vacation.co/"
                 target="_blank text-center"
@@ -307,7 +303,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:flex md:justify-center md:items-center md:mt-14">
+        <div class="w-full md:flex md:justify-center md:items-center mt-14">
           <div class="md:w-1/2 md:ml-4 md:flex md:flex-col md:translate-x-16">
             <h1
               class="dark:text-slate-100 font-semibold text-xl mb-4 md:text-2xl"
@@ -322,7 +318,7 @@
             </div>
             <div class="mt-2">
               <p class="dark:text-slate-400 text-sm font-light font-roboto">
-                HTML CSS TailwindCSS
+                HTML CSS TailwindCSS ReactJS
               </p>
             </div>
             <div class="mt-2">
@@ -349,7 +345,7 @@
               ></span>
             </div>
             <div class="overflow-y-scroll w-full h-full">
-              <img src="dist/img/Vacation-full.png" alt="" class="w-full" />
+              <img src="dist/img/urBg-co.png" alt="" class="w-full" />
             </div>
           </div>
         </div>
