@@ -26,6 +26,7 @@
       }
     </script> -->
   </head>
+
   <body>
     <!-- Header Section Start -->
     <header
@@ -126,13 +127,14 @@
               class="text-base font-semibold text-primary md:text-lg font-roboto"
             >
               Hi, my name is
-              <span
-                class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-slate-200 font-inter"
-                >Akmal Maulfi</span
-              >
+              <div class="flex items-center justify-center h-10">
+                <span
+                  class="inline-block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-slate-200 font-inter typed"
+                ></span>
+              </div>
             </h1>
             <h2
-              class="font-light text-slate-500 dark:text-slate-300 mb-4 lg:text-lg font-roboto"
+              class="font-light text-slate-500 dark:text-slate-300 mb-4 lg:text-lg font-roboto mt-2"
             >
               Front End Developer
             </h2>
@@ -437,6 +439,15 @@
     </footer>
     <!-- Footer End -->
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="dist/js/script.js"></script>
+    <script>
+      const typing = document.querySelector(".typed")
+      var options = {
+        strings: ["Akmal Maulfi"],
+        typeSpeed: 100,
+      }
+      var typed = new Typed(typing, options)
+    </script>
   </body>
 </html>

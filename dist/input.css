@@ -40,3 +40,7 @@ body {
   background-color: #8b5cf6;
   border-radius: 10px;
 }
+
+.typed-cursor {
+  @apply text-[30px];
+}
