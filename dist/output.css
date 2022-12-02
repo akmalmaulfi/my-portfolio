@@ -699,12 +699,24 @@ video {
   margin-top: 3.5rem;
 }
 
+.mr-0 {
+  margin-right: 0px;
+}
+
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .block {
   display: block;
 }
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -908,8 +920,24 @@ video {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.fill-\[\#243c5a\] {
+  fill: #243c5a;
+}
+
 .fill-slate-200 {
   fill: #e2e8f0;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+.fill-\[\#06B6D4\] {
+  fill: #06B6D4;
+}
+
+.fill-\[\#61DAFB\] {
+  fill: #61DAFB;
 }
 
 .p-1 {
@@ -982,6 +1010,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-roboto {
