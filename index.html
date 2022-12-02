@@ -126,7 +126,7 @@
             <h1
               class="text-base font-semibold text-primary md:text-lg font-roboto"
             >
-              Hi, my name is
+              <span class="typed2"></span>
               <div class="flex items-center justify-center h-10">
                 <span
                   class="inline-block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-slate-200 font-inter typed"
@@ -442,12 +442,24 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="dist/js/script.js"></script>
     <script>
-      const typing = document.querySelector(".typed")
-      var options = {
+      new Typed(".typed2", {
+        strings: ["Hi,^1000 my name is"],
+        typeSpeed: 80,
+        onComplete: function () {
+          var cursor = document.getElementsByClassName("typed-cursor")[0]
+          setTimeout(function () {
+            ;(cursor.style.animationIterationCount = 0),
+              (cursor.style.opacity = 0)
+          }, 0)
+        },
+      })
+
+      new Typed(".typed", {
         strings: ["Akmal Maulfi"],
-        typeSpeed: 100,
-      }
-      var typed = new Typed(typing, options)
+        typeSpeed: 80,
+        startDelay: 4800,
+        showCursor: false,
+      })
     </script>
   </body>
 </html>
